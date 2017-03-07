@@ -1,0 +1,150 @@
+.page-content {
+	color: #363942;
+	//box-sizing: border-box;
+
+	section {
+		padding: 35px;
+	}
+
+	.about {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		&__photo {
+			width: 75px;
+			margin-right: 10px;
+
+			img {
+				max-width: 100%;
+				border-radius: 50%;
+			}
+		}
+		
+		&__prof {
+			padding-top: 7px;
+			font-size: 14px;
+		}
+
+		&__title {
+			margin-right: 10px;
+		}
+
+
+
+		&__description {
+			flex-grow: 1;
+			margin-top: 15px;
+			//width: 100%;
+		}
+	}
+
+	.resume {
+		&__text {
+			margin-top: 15px;
+		}
+
+		&__link {
+			text-decoration: underline;
+			color: #5C832F;
+			transition: all .3s ease-in;
+
+			&:hover {
+				text-decoration: none;
+				color: #284907;
+			}
+		}
+	}
+
+	.skills {
+		&__text {
+			margin-top: 15px;
+		}
+	}
+
+	.portfolio {
+		&__list {
+			margin-top: 15px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__item {
+			width: 45%;
+			margin-bottom: 15px;
+			background: #fff;
+			transition: all .3s ease-in;
+			text-align: center;
+			
+			&:hover {
+				box-shadow: 0 0 5px 5px rgba(0,0,0,0.4);
+			}
+		}
+	}
+
+	.item {
+		&__info {
+			padding: 10px 15px 20px;
+		}
+
+
+		&__text {
+			margin-bottom: 10px;
+
+			a {
+				text-decoration: underline;
+				color: #5C832F;
+				transition: all .3s ease-in;
+
+				&:hover {
+					text-decoration: none;
+					color: #284907;
+				}
+			}
+		}
+
+		&__photo {
+			img {
+				max-width: 100%;
+			}
+		}
+
+		&__link {
+			text-transform: uppercase;
+			display: inline-block;
+			margin: 0 auto;
+			text-align: center;
+			padding: 10px 15px;
+			font-size: 18px;
+			line-height: 22px;
+			margin-top: 15px;
+			background: #363942;
+			color: #fff;
+			border-radius: 3px;
+			transition: all .3s ease-in;
+
+				&:hover {
+					background: darken(#5C832F,10%);
+				}
+		}
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.page-content {
+		float: left;
+		width: 70%;
+	}
+
+	.portfolio {
+		&__list {
+			display: block;
+		}
+
+		&__item {
+			display: inline-block;
+		}
+	}
+}

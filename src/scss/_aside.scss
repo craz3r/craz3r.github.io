@@ -1,0 +1,98 @@
+.contact {
+	position: fixed;
+	height: 100%;
+	padding: 55px 35px 0 35px;
+	box-sizing: border-box;
+	background: #363942;
+}
+
+.fix {
+	width: 30%;
+	flex-shrink: 0;
+	height: 100vh;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+.page-logo {
+	text-align: left;
+	letter-spacing: 5px;
+	font-size: 32px;
+
+	a {
+		color: #fff;
+	}
+
+	&__alias {
+		display: inline-block;
+		background: linear-gradient(45deg, #5C832F, #284907);
+		border: 2px solid #fff;
+		margin-right: 5px;
+		padding: 3px;
+		letter-spacing: 3px;
+	}
+}
+
+.personal-info {
+	margin-top: 125px;
+}
+
+.contacts {
+	text-align: center;
+	font-size: 24px;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+
+	a {
+		margin-right: 10px;
+		color: #fff;
+		transition: all .3s ease-in;
+
+		&:hover {
+			color: #5C832F;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.fix {
+		width: 15%;
+	}
+
+	.contact {
+		padding: 35px 20px 0 20px;
+	}
+
+	.page-logo {
+		text-align: center;
+
+		&__link {
+			font-size: 0;
+		}
+
+		&__alias {
+			font-size: 32px;
+			margin: 0 auto;
+		}
+	}
+
+	.personal-info {
+		display: none;
+	}
+
+	.contacts {
+		bottom: 30%;
+
+		a {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.fix {
+		float: left;
+	}
+}
